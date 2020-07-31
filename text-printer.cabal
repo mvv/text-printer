@@ -36,8 +36,9 @@ Library
     bytestring >= 0.10,
     text,
     pretty,
-    text-latin1 >= 0.3.1,
-    semigroups >= 0.18.2
+    text-latin1 >= 0.3.1
+  if impl(ghc < 8.0)
+    Build-Depends: semigroups >= 0.18.2
   Hs-Source-Dirs: src
   GHC-Options: -Wall
   Exposed-Modules:
