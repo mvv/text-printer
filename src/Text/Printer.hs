@@ -76,7 +76,7 @@ import qualified Data.ByteString as BS
 import qualified Data.ByteString.Char8 as BS8
 import qualified Data.ByteString.Lazy as BL
 import qualified Data.ByteString.Lazy.Char8 as BL8
-import qualified Data.ByteString.Lazy.Builder as BB
+import qualified Data.ByteString.Builder as BB
 import qualified Text.PrettyPrint as PP
 
 -- | Text monoid. 'string' must be equivalent to 'fromString' and be a monoid
