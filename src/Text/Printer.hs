@@ -76,7 +76,11 @@ import qualified Data.ByteString as BS
 import qualified Data.ByteString.Char8 as BS8
 import qualified Data.ByteString.Lazy as BL
 import qualified Data.ByteString.Lazy.Char8 as BL8
+#if MIN_VERSION_bytestring(0,11,0)
+import qualified Data.ByteString.Builder as BB
+#else
 import qualified Data.ByteString.Lazy.Builder as BB
+#endif
 import qualified Text.PrettyPrint as PP
 
 -- | Text monoid. 'string' must be equivalent to 'fromString' and be a monoid
